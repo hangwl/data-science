@@ -29,3 +29,5 @@ Normalization - has different meaning depending on the case
     See article on L1-norm and L2-norm <http://www.chioka.in/differences-between-the-l1-norm-and-the-l2-norm-least-absolute-deviations-and-least-squares/>
 
 Feature selection simplifies models by removing unnecessary features
+    feature_selection.f_regression
+        F-regression creates simple linear regressions of each feature and the dependent variable
