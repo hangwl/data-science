@@ -27,3 +27,5 @@ Normalization - has different meaning depending on the case
             normalize=False
     See Wiki article on Feature scaling <https://en.wikipedia.org/wiki/Feature_scaling>
     See article on L1-norm and L2-norm <http://www.chioka.in/differences-between-the-l1-norm-and-the-l2-norm-least-absolute-deviations-and-least-squares/>
+
+Feature selection simplifies models by removing unnecessary features
