@@ -34,3 +34,10 @@ Normalization - has different meaning depending on the case
 Feature selection simplifies models by removing unnecessary features
     feature_selection.f_regression
         F-regression creates simple linear regressions of each feature and the dependent variable
+
+Underfitting and Overfitting
+    - an underfitted model has low train accuracy, low test accuracy
+    - overfitted model has high train accuracy, but captures all the noise, and thus has low test accuracy
+    - a good model should have high accuracy in both train and test data
+      - it makes sense to split data into 2 parts, training and testing
+        - train model on training dataset and test it on testing dataset
