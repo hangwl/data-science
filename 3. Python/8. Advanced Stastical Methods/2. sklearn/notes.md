@@ -16,7 +16,7 @@ Advantages:
 3 types - supervised, unsupervised, reinforcement
     Supervised - Inputs(features to predict targets) and Targets(outcomes)
 
-Standardization - process of subtracting the mean and dividing by the standard deviation (transforming data into standard scale)
+Standardization (Feature Scaling)- process of subtracting the mean and dividing by the standard deviation (transforming data into standard scale - mean of 0 and sd. of 1)
     Easy fix to the most common problem in working with numerical data caused by difference in magnitudes
     AKA feature scaling or normalization (which may refer to other concepts in ML)
 
