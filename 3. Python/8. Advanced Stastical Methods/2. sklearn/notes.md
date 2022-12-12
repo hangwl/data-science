@@ -19,6 +19,7 @@ Advantages:
 Standardization (Feature Scaling)- process of subtracting the mean and dividing by the standard deviation (transforming data into standard scale - mean of 0 and sd. of 1)
     Easy fix to the most common problem in working with numerical data caused by difference in magnitudes
     AKA feature scaling or normalization (which may refer to other concepts in ML)
+        Having all inputs with the same magnitude allows us to compare their impact
 
 Normalization - has different meaning depending on the case
     in sklearn reg.fit(), subtract the mean but divide by the L2-norm of the inputs
