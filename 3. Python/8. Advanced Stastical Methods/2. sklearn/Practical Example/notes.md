@@ -83,3 +83,5 @@ As usual, the modelling process is a follows:
 
 5. Create dummy variables - need to create N-1 dummies if we have N categories for a feature
       By convention, we also want to arrange variables in order of: dependent variable, independent numerical variables, dummy variables
+      Check VIF
+        See Dummies and VIF for example
