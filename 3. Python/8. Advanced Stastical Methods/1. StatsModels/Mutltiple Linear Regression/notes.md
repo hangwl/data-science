@@ -58,7 +58,7 @@ F-test (Test for significance of MLR model)
       - *Keep them both but treat with caution
     - Prevention:
       - Find the correlation between each two pairs of independent variables
-        - Plot correlation matrix
+        - Plot correlation matrix(?)
 
 # Dummy Variables
 

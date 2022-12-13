@@ -58,4 +58,28 @@ As usual, the modelling process is a follows:
          - data_4 = data_3[data_3['Year']>q]
 
 4. Checking the OLS assumptions
-      -   See practical example with comments
+   1. Linearity
+        Plot log-price on individual variables of interest
+   2. No Endogeneity
+        To test if assumption is violated, can take the residuals and plot them against individual variables
+   3. Normality and Homoskedasticity (constant variance of errors)
+        Normality is assumed for big samples following CLT
+        The zero mean of the distribution of errors in accomplished through the inclusion of the intercept in the regression
+        Heteroskedasticity is addressed by log-transform on y
+   4. No Serial Correlation
+        No necessary in this case. (We are not dealing with time-series or panel data)
+        No reason for observations to be dependent on each other
+   5. No Multicollinearity
+        Logical for year and mileage to be correlated
+        sklearn does not have dedicated method to check this assumption.
+          need to rely on statsmodels:
+            VIF (variance inflation factor) can used to check for multicollinearity <https://statisticalhorizons.com/multicollinearity/>
+              - VIF produces a measure to estimate how much larger the square root of the std. error of an estimate is compared to a situation where it was completed uncorrelated with the other predictors
+              - VIF = 1 : no multicollinearity
+              - VIF = 1-5 : perfectly okay
+              - VIF = >10 : unacceptable
+  
+    -   See practical example with comments
+
+5. Create dummy variables - need to create N-1 dummies if we have N categories for a feature
+      By convention, we also want to arrange variables in order of: dependent variable, independent numerical variables, dummy variables
