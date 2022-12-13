@@ -85,3 +85,28 @@ As usual, the modelling process is a follows:
       By convention, we also want to arrange variables in order of: dependent variable, independent numerical variables, dummy variables
       Check VIF
         See Dummies and VIF for example
+
+6. Linear Regression Model
+   1. Declare inputs (x) and targets (y)
+   2. Scale the data
+        from sklearn.preprocessing import StandardScaler
+          not usually recommended to standardize dummy variables -> use custom scaler instead
+          for ML purposes, scaling should have no effect on the predictive power of dummies, however they will lose their dummy meaning 
+   3. Train test split
+        from sklearn.model_selection import train_test_split
+
+   4. Create the regression
+        create linear regression object
+        fit regression with scaled train inputs and targets
+        check outputs of regression
+          y_hat = reg.predict(x_train)
+          plt.scatter(y_train, y_hat)
+          ...
+          plt.show()
+        check residual plot
+          sns.displot(y_train - y_hat, kde=True, stat="density", kde_kws=dict(cut=3))
+        check R-squared of the model (example given is non-adjusted R2)
+          recall how to find adjusted R-squared (homework)
+
+   5. Finding the weights and bias
+   6. Testing
