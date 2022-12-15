@@ -108,5 +108,21 @@ As usual, the modelling process is a follows:
         check R-squared of the model (example given is non-adjusted R2)
           recall how to find adjusted R-squared (homework)
 
-   5. Finding the weights and bias
+   5. Finding the weights and bias (note the benchmark dummies)
+        reg_summary = pd.DataFrame(inputs.columns.values, columns=['Features'])
+        reg_summary['Weights'] = reg.coef_
+        reg_summary
+
    6. Testing
+        plot test target against predicted targets and see if they resemble a 45degree line
+        set alpha=0.2 for 'heatmap' in plt.scatter()
+        we can also manually check these predictions (take exponential of log_price to obtain actual prices)
+        how can model be further improved?
+          - use different set of variables
+          - remove a bigger part of outliers
+          - use different kinds of transformations
+          - and/or
+          - perform feature selection
+          - create regression where 'Price' is not transformed
+          - deal with outliers in a different way
+        
