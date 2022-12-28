@@ -2,7 +2,7 @@
 logistic regression predicts the probability of an event occurring
 $$p(X) = \frac{e^{(\beta_{0}+\beta_{1}x_{1}+...+\beta_{k}x_{k})}}{1+e^{(\beta_{0}+\beta_{1}x_{1}+...+\beta_{k}x_{k})}}$$
 
-logit (log-odds) function - see <https://en.wikipedia.org/wiki/Logit>
+we use logit (log-odds) function as its coefficients are easier to interpret - see <https://en.wikipedia.org/wiki/Logit>
 $$log(\frac{p(X)}{1-p(X)}) = \beta_{0}+\beta_{1}x_{1}+...+\beta_{k}x_{k}$$
 
 Logistic Regression Assumptions:
