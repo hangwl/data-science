@@ -28,6 +28,6 @@ Likewise, use dummy variables for binary predictors e.g. Gender
 
 Confusion Matrix describes accuracy of binary predictions
 
-Overfitting - an overtrained model misses the point of making predictions
+Overfitting - an overtrained model misses the point of making predictions\
 Underfitting - model does not capture underlying logic of data
 
