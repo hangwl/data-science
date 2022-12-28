@@ -1,9 +1,9 @@
 
 logistic regression predicts the probability of an event occurring
-$p(X) = \frac{e^{(\beta_{0}+\beta_{1}x_{1}+...+\beta_{k}x_{k})}}{1+e^{(\beta_{0}+\beta_{1}x_{1}+...+\beta_{k}x_{k})}}$
+$$p(X) = \frac{e^{(\beta_{0}+\beta_{1}x_{1}+...+\beta_{k}x_{k})}}{1+e^{(\beta_{0}+\beta_{1}x_{1}+...+\beta_{k}x_{k})}}$$
 
 logit (log-odds) function - see <https://en.wikipedia.org/wiki/Logit>
-$log(\frac{p(X)}{1-p(X)}) = \beta_{0}+\beta_{1}x_{1}+...+\beta_{k}x_{k}$
+$$log(\frac{p(X)}{1-p(X)}) = \beta_{0}+\beta_{1}x_{1}+...+\beta_{k}x_{k}$$
 
 Logistic Regression Assumptions:
 1. Nonlinear by definition
@@ -20,8 +20,8 @@ Interpreting Regression Summary:
 - Pseudo R-squared - no clearly defined R2 for logistic regression | McFadden's R2 is good between 0.2 - 0.4, mostly useful to compare variations of same model
 
 What do the Odds actually mean?
-$log(\frac{\pi}{1-\pi})=-69.91+0.042*SAT$
-$log(\frac{odds_{2}}{odds_{1}})=0.042(SAT_{2}-SAT_{1})$
+$$log(\frac{\pi}{1-\pi})=-69.91+0.042*SAT$$
+$$log(\frac{odds_{2}}{odds_{1}})=0.042(SAT_{2}-SAT_{1})$$
 i.e. when SAT score increases by 1, odds of admittance increases by 4.2%
 
 Likewise, use dummy variables for binary predictors e.g. Gender
