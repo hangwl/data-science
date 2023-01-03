@@ -20,3 +20,7 @@ Here are the steps:
 7. Set a learning rate
 
 8. Train the model
+
+9. Print weights and biases and see if we have worked correctly
+
+10. Plot last outputs vs targets
