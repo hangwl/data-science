@@ -25,8 +25,6 @@ At some point, the validation loss could start increasing. This means we are ove
 Although we are getting better at predicing the training set, we are moving further away from the overall logic on the data.
 At this point, we should stop training the model.
 
-
-
 # But what if our dataset is too small?
 N-Fold Cross-Validation combines the train and validation sets in a clever way.
 
@@ -40,8 +38,6 @@ IT is less likely that the overfitting flag is raised and it is possible that we
 The tradeoff is between not having a model or having a model that's a bit overfitted.
 
 N-Fold Cross-Validation solves the scarce data issue but should by no means be used as the norm.
-
-
 
 # Early Stopping Mechanism
 - Simplest way: Train for a preset number of epochs.
@@ -114,6 +110,14 @@ Conventional to set Momentum Coefficient hyperparameter (alpha) = 0.9
 
 Learning Rate Schedules / How to Choose the Optimal Learning Rate
 
-Instead of using a simple rule to adjust the learning rate, we can consider two types of adaptive learning rates:
-1. AdaGrad
-2. RMSProp
+Instead of using a simple rule to adjust the learning rate, consider these types of adaptive learning rates:
+1. AdaGrad (adaptive gradient algorithm)
+   - proposed in the 2011
+   - dynamically varies the learning rate at each update and for each weight individually
+2. RMSProp (root mean square propagation)
+   - similar to AdaGrad with a different G function
+3. *Adam (Adaptive Moment Estimation)*
+   - state-of-the-art optimization algorithm
+   - steps on RMSProp and introduces momentum into equation
+
+# Preprocessing
