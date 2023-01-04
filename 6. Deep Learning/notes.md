@@ -121,3 +121,7 @@ Instead of using a simple rule to adjust the learning rate, consider these types
    - steps on RMSProp and introduces momentum into equation
 
 # Preprocessing
+Motivations:
+1. Compatibility of Data
+2. Orders of Magnitude
+3. Generalization
