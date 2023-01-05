@@ -125,3 +125,26 @@ Motivations:
 1. Compatibility of Data
 2. Orders of Magnitude
 3. Generalization
+
+Types of Basic Preprocessing:
+1. Relative Metrics
+   - e.g. daily stock price changes
+2. Logarithms
+   - Faster computation
+   - Lower orders of Magnitude
+   - Provide clearer relationships
+   - Homogeneous Variance
+
+Standardization (feature scaling) - process of transforming data into a standard scale ~ N(0,1)
+Besides standardization, there are other populator methods:
+- Normalization using L2-norm converts each sample into a unit length vector.
+- PCA (principal components analysis) is a dimension reduction technique used to combine several variables into a bigger (latent) variable.
+- Whitening is another technique frequently used for preprocessing. It is often performed after PCA and removes most of the underlying correlations between data points. Whitening can be useful when conceptually, the data should be uncorrelated, but is not being reflected in the observations.
+
+Preprocessing Categorical Data:
+If there are few categories, One-Hot Encoding is preferred. Otherwise, we use Binary Encoding as it requires exponentially less variables to be created.
+1. One-hot Encoding
+   - Requires a lot of new variables
+     - Can consider usig binary encoding instead (but binary encoding is flawed)
+2. Binary Encoding
+
